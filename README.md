@@ -1,5 +1,5 @@
 # Rimworld_NoAnnoyingRaids
-![alt text](https://github.com/Laureeeeeeeeeeeeeeen/Rimworld_NoAnnoyingRaids/header_img.png?raw=true)
+[alt text](header_img.png)
 
 Organized as 4 seperate mods. Install em all and enable/disable them as desired. Or just install one, I'm not your mom.
 
