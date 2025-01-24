@@ -1,5 +1,5 @@
 # Rimworld_NoAnnoyingRaids
-[alt text](header_img.png)
+![Header image](header_img.png)
 
 Organized as 4 seperate mods. Install em all and enable/disable them as desired. Or just install one, I'm not your mom.
 
