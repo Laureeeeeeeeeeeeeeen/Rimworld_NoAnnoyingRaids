@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <!-- Disable vanilla breacher raid -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RaidStrategyDef[@Name = "BreachingBase"]/selectionWeightPerPointsCurve/points</xpath>
+                <value>
+                    <points>
+                        <li>(0, 0.0)</li>
+                        <li>(1, 0.0)</li>
+                    </points>
+                </value>
+            </li>
+            <!-- Disable mechanoid breacher raid -->
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/RaidStrategyDef[@Name = "BreachingBase"]/selectionWeightCurvesPerFaction</xpath>
+            </li>
+            <!-- <li Class="PatchOperationReplace">
+                <xpath>Defs/RaidStrategyDef[@Name = "BreachingBase"]/selectionWeightCurvesPerFaction</xpath>
+                <value>
+                    <li>
+                        <faction>Mechanoid</faction>
+                        <selectionWeightPerPointsCurve>
+                        <points>
+                            <li>(0, 0.0)</li>
+                            <li>(1, 0.0)</li>
+                        </points>
+                        </selectionWeightPerPointsCurve>
+                    </li>
+                </value>
+            </li> -->
+            <!-- Add a message just in case an update breaks the mod -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RaidStrategyDef[defName = "ImmediateAttackBreaching"]/arrivalTextEnemy</xpath>
+                <value>
+                    <arrivalTextEnemy>They are attacking immediately.\n\nThese raiders intend to breach your walls. They'll determine their own path into your colony and destroy anything in their way.\n\nOops! A game update seems to have broken the "No Sapper/Breacher Raids" mod.</arrivalTextEnemy>
+                </value>
+            </li>
+            <!-- Add a message just in case an update breaks the mod -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RaidStrategyDef[defName = "ImmediateAttackBreachingSmart"]/arrivalTextEnemy</xpath>
+                <value>
+                    <arrivalTextEnemy>They are attacking immediately.\n\nThese raiders intend to breach your walls. They'll determine their own path into your colony and destroy anything in their way.\n\nWatch out - they appear to be unusually clever with their tactics. They'll avoid your turrets' fields of fire and notice some of your traps.\n\nOops! A game update seems to have broken the "No Sapper/Breacher Raids" mod.</arrivalTextEnemy>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch> 

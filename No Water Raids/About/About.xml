@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>No Water Raids</name>
+    <author>Laureeeeeeeeeeeeeeen</author>
+    <packageId>Laureeeeeeeeeeeeeeen.NoRaids.Water</packageId>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <description>  Disables emerge from water raid entry method.  Works for both mechanoids and devourers.
+  If you don't have Anomaly it will throw an error at startup that you can ignore but still disables mechanoids emerging from the ocean.
+
+  Load after any mod which adds new incidents/raids.
+	</description>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+	</loadAfter>
+</ModMetaData>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>No Breacher/Sapper Raids</name>
+    <author>Laureeeeeeeeeeeeeeen</author>
+    <packageId>Laureeeeeeeeeeeeeeen.NoRaids.Breach</packageId>
+    <supportedVersions>
+        <li>1.4</li>
+        <li>1.5</li>
+    </supportedVersions>
+    <description>  Disables breacher and sapper raids both.  The raids still happen but a different strategy is chosen.
+
+  Load after any mod which adds new incidents/raids.
+  Note: While this should work fine on 1.4 I have only tested it on 1.5 with all DLCs, good luck!
+	</description>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+	</loadAfter>
+</ModMetaData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <!-- Disable devourer water raid, probably -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/IncidentDef[defName = "DevourerWaterAssault"]/baseChance</xpath>
+                <value>
+                    <baseChance>0</baseChance>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
