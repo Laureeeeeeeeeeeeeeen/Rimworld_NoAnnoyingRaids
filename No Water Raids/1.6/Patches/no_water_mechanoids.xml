@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <!-- Disable mechanoid water raid -->
+                <!-- If this doesn't work try changing the PawnsArrivalModeDef idk man -->
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/RaidStrategyDef[defName = "EmergeFromWater"]/selectionWeightCurvesPerFaction</xpath>
+            </li>
+            <!-- Add a message just in case an update breaks the mod -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RaidStrategyDef[defName = "EmergeFromWater"]/arrivalTextEnemy</xpath>
+                <value>
+                    <arrivalTextEnemy>They are attacking immediately.\n\nOops! A game update seems to have broken the "No Water Raids" mod.</arrivalTextEnemy>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

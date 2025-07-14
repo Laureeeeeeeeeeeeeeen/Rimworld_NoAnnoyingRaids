@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+            <operations>
+                <!-- Disables AutoMortar from mech clusters -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName = "Turret_AutoMortar"]/generateCommonality</xpath>
+                    <value>
+                        <generateCommonality>0</generateCommonality>
+                    </value>
+                </li>
+                <!-- Just in case it still spawns, neuter it -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName = "Artillery_AutoMortar"]/verbs/li/minRange</xpath>
+                    <value>
+                        <minRange>1</minRange>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName = "Artillery_AutoMortar"]/verbs/li/range</xpath>
+                    <value>
+                        <range>2</range>
+                    </value>
+                </li>
+            </operations>
+		</match>
+    </Operation>
+</Patch>

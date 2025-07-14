@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <!-- Disable vanilla siege raid -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RaidStrategyDef[defName = "Siege"]/selectionWeightPerPointsCurve/points</xpath>
+                <value>
+                    <points>
+                        <li>(0, 0.0)</li>
+                        <li>(1, 0.0)</li>
+                    </points>
+                </value>
+            </li>
+            <!-- Add a message just in case an update breaks the mod -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RaidStrategyDef[defName = "Siege"]/arrivalTextEnemy</xpath>
+                <value>
+                    <arrivalTextEnemy>It looks like they want to besiege the colony and pound you with mortars from a distance. You can try to wait them out - or go get them.\n\nOops! A game update seems to have broken the "No Sapper Raids" mod.</arrivalTextEnemy>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

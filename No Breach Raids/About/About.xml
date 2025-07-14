@@ -6,17 +6,21 @@
     <supportedVersions>
         <li>1.4</li>
         <li>1.5</li>
+        <li>1.6</li>
     </supportedVersions>
-    <description>  Disables breacher and sapper raids both.  The raids still happen but a different strategy is chosen.
+    <description>  Disables breacher and sapper raids both. The raid will still happen but a different strategy is chosen.
 
-  Load after any mod which adds new incidents/raids.
-  Note: While this should work fine on 1.4 I have only tested it on 1.5 with all DLCs, good luck!
+  If you encounter a raid which you think should have been blocked please let me know by creating a new topic in the discussion tab for this mod.
+
+  Load after any mod which adds new incidents/raids. Not actually tested on 1.4, good luck!
 	</description>
+	<modIconPath IgnoreIfNoMatchingField="True">turtle</modIconPath>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>Ludeon.RimWorld.Anomaly</li>
+		<li>OskarPotocki.VFE.Medieval2</li>
 	</loadAfter>
 </ModMetaData>

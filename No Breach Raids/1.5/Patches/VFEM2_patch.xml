@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval 2</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/IncidentDefs[defName="VFEM_PillageRaid"]/letterText</xpath>
+					<value>
+                        <letterText>A group of pillagers have arrived nearby. They will use torches to set your base ablaze. They are not interested in fighting and only want to steal your property and burn down your houses.\n\nOops! A game update seems to have broken the "No Sapper/Breacher Raids" mod.</letterText>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/IncidentDefs[defName="VFEM_PillageRaid"]/baseChance</xpath>
+					<value>
+                        <baseChance>0.0</baseChance>
+                    </value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/IncidentDefs[defName="VFEM_PillageRaid"]/minRefireDays</xpath>
+					<value>
+		                <minRefireDays>999</minRefireDays>
+                    </value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
